@@ -8,7 +8,7 @@ function App() {
 
   const getDownloads = async () => {
     try {
-      const res = await axios.get(`https://package-download-tracker.vercel.app/?input=${input}`);
+      const res = await axios.get(`http://localhost:3000/?input=${input}`);
       const { downloads } = res.data;
       setDownload(downloads);
     } catch (error) {
